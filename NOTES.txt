@@ -24,4 +24,7 @@ int size = arr.size();
 
 explain above code by iterating through each step
 
+1)unionArr[unionSize++]=arr1[i];
 
+=> unionArr[unionSize] = arr1[i];
+unionSize++;
