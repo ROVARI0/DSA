@@ -21,11 +21,15 @@ int main()
             sum += arr[j];
             if (sum == T)
             {
-
-                maxlen = max(maxlen, j + i - 1);
+                maxlen = max(maxlen, j - i + 1);
             }
         }
     }
     cout << "maxlen = " << maxlen;
     return 0;
 }
+// i = 1 → sum = 2
+// j = 1 → sum = 2 + 3 = 5 ✅
+// → Subarray = {2, 3} 
+// → Length = j - i + 1 = 1 - 0 + 1 = 2 
+// → maxlen = max(0, 2) = 2
