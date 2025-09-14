@@ -1,4 +1,4 @@
-// Find the number that appears once, and other numbers twice.
+// Find the number that appears once
 
 #include <iostream>
 #include <vector>

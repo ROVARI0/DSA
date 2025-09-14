@@ -8,19 +8,21 @@ using namespace std;
 
 int maximumConsecutive(vector<int> &arr, int len)
 {
-    int count = 0;
+    int count = 0, maximum = 0;
+    
     for (int i = 0; i < len; i++)
     {
         if (arr[i] == 1)
         {
             count++;
+            maximum = max(maximum, count);
         }
         else
         {
             count = 0;
         }
     }
-    int maximum = max(count, maximum);
+
     return maximum;
 }
 int main()
